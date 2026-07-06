@@ -58,7 +58,7 @@ const HomePage = () => {
       {/* Grid */}
       <div className="absolute inset-0 opacity-[0.04] bg-[linear-gradient(to_right,#ffffff_1px,transparent_1px),linear-gradient(to_bottom,#ffffff_1px,transparent_1px)] bg-[size:48px_48px]" />
 
-      <div className="relative flex h-full items-center justify-center px-4 py-5 sm:px-6 lg:px-8">
+      <div className="relative flex h-full items-center justify-center px-4 pt-24 pb-5 sm:px-6 lg:px-8">
         <motion.div
           initial={{
             opacity: 0,

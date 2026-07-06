@@ -15,14 +15,11 @@ const Navbar = () => {
         duration: 0.6,
         ease: "easeOut",
       }}
-      className="fixed top-0 z-40 w-full border-b border-white/10 bg-[#0F0A1A]/75 backdrop-blur-2xl"
+      className="sticky top-0 z-40 w-full border-b border-white/10 bg-[#0F0A1A]/75 backdrop-blur-2xl"
     >
       <div className="mx-auto h-16 max-w-7xl px-4">
         <div className="flex h-full items-center justify-between">
-          <motion.div
-            whileHover={{ scale: 1.02 }}
-            whileTap={{ scale: 0.98 }}
-          >
+          <motion.div whileHover={{ scale: 1.02 }} whileTap={{ scale: 0.98 }}>
             <Link
               to="/"
               className="group flex items-center gap-3 transition-all duration-300 hover:opacity-90"
@@ -82,10 +79,7 @@ const Navbar = () => {
                 to="/settings"
                 className="flex items-center gap-2 rounded-2xl border border-white/10 bg-white/5 px-3 py-2 text-sm font-medium text-white/70 transition-all duration-300 hover:border-pink-400/30 hover:bg-white/10 hover:text-white"
               >
-                <motion.div
-                  whileHover={{ rotate: 90 }}
-                  transition={{ duration: 0.35 }}
-                >
+                <motion.div whileHover={{ rotate: 90 }} transition={{ duration: 0.35 }}>
                   <Settings size={17} />
                 </motion.div>
 
@@ -100,10 +94,7 @@ const Navbar = () => {
                     to="/profile"
                     className="flex items-center gap-2 rounded-2xl border border-white/10 bg-white/5 px-3 py-2 text-sm font-medium text-white/70 transition-all duration-300 hover:border-pink-400/30 hover:bg-white/10 hover:text-white"
                   >
-                    <motion.div
-                      whileHover={{ scale: 1.15 }}
-                      transition={{ duration: 0.2 }}
-                    >
+                    <motion.div whileHover={{ scale: 1.15 }} transition={{ duration: 0.2 }}>
                       <User size={17} />
                     </motion.div>
 
@@ -112,20 +103,12 @@ const Navbar = () => {
                 </motion.div>
 
                 <motion.button
-                  whileHover={{
-                    y: -3,
-                    scale: 1.04,
-                  }}
-                  whileTap={{
-                    scale: 0.96,
-                  }}
+                  whileHover={{ y: -3, scale: 1.04 }}
+                  whileTap={{ scale: 0.96 }}
                   onClick={logout}
                   className="flex items-center gap-2 rounded-2xl bg-gradient-to-r from-[#FF4D8D] to-[#B14AED] px-3 py-2 text-sm font-semibold text-white shadow-lg shadow-pink-500/20"
                 >
-                  <motion.div
-                    whileHover={{ x: 2 }}
-                    transition={{ duration: 0.2 }}
-                  >
+                  <motion.div whileHover={{ x: 2 }} transition={{ duration: 0.2 }}>
                     <LogOut size={17} />
                   </motion.div>
 
